@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 501251 */
+  src: url('./iconfont/iconfont.woff2?t=1621583509093') format('woff2'),
+       url('./iconfont/iconfont.woff?t=1621583509093') format('woff'),
+       url('./iconfont/iconfont.ttf?t=1621583509093') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-test:before {
+  content: "\e635";
+}
+
+.icon-play:before {
+  content: "\e701";
+}
+
+.icon-close:before {
+  content: "\e747";
+}
+
+.icon-play1:before {
+  content: "\e67a";
+}
+
+.icon-close-bold:before {
+  content: "\e685";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  height: 2000px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#list {
+  width: 1226px;
+  margin: 20px auto;
+}
+#list .list-wrap{
+  width: 1240px;
+}
+#list .list-wrap li{
+  float: left;
+  width: 296px;
+  height: auto;
+  margin-right: 14px;
+}
+#list .list-wrap div{
+  position: relative;
+}
+#list .list-wrap img{
+  width: 100%; 
+  height: 100%;
+}
+#list .list-wrap i{}
+#list .list-wrap h3{}
