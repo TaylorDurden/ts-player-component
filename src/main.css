@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 501251 */
-  src: url('./iconfont/iconfont.woff2?t=1621583509093') format('woff2'),
-       url('./iconfont/iconfont.woff?t=1621583509093') format('woff'),
-       url('./iconfont/iconfont.ttf?t=1621583509093') format('truetype');
+  src: url('./iconfont/iconfont.woff2?t=1621677880352') format('woff2'),
+       url('./iconfont/iconfont.woff?t=1621677880352') format('woff'),
+       url('./iconfont/iconfont.ttf?t=1621677880352') format('truetype');
 }
 
 .iconfont {
@@ -13,12 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon-test:before {
-  content: "\e635";
+.icon-volume:before {
+  content: "\e668";
 }
 
-.icon-play:before {
-  content: "\e701";
+.icon-full:before {
+  content: "\e644";
+}
+
+.icon-pause:before {
+  content: "\e6a3";
 }
 
 .icon-close:before {
@@ -29,8 +33,9 @@
   content: "\e67a";
 }
 
-.icon-close-bold:before {
-  content: "\e685";
+body {
+  background: #f5f5f5;
+  height: 2000px;
 }
 
 * {
@@ -44,10 +49,6 @@ ul {
 
 img {
   display: block;
-}
-
-body {
-  height: 2000px;
 }
 
 .clearfix::after {
@@ -68,6 +69,14 @@ body {
   width: 296px;
   height: auto;
   margin-right: 14px;
+  background: white;
+  cursor: pointer;
+}
+#list .list-wrap li:hover {
+  box-shadow: 5px 5px 10px #d7d7d7;
+}
+#list .list-wrap li:hover i{
+  color: #ff6700;
 }
 #list .list-wrap div{
   position: relative;
@@ -76,5 +85,21 @@ body {
   width: 100%; 
   height: 100%;
 }
-#list .list-wrap i{}
-#list .list-wrap h3{}
+#list .list-wrap i{
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  /* border: 2px white solid; */
+  color: white;
+  /* border-radius: 10px; */
+  width: 32px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+#list .list-wrap h3{
+  font-size: 12px;
+  text-align: center;
+  padding: 30px 0;
+}
