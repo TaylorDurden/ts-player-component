@@ -22,19 +22,19 @@
   background: #222223;
 }
 .video-progress-now{
-  width: 50%;
+  width: 0;
   height:100%;
   background: #ff6a03;
   position: absolute;
   left: 0;
   z-index: 1;
 }
-.video-progress-suc{
-  width: 70%;
+.video-progress-cache{
+  width: 0;
   height:100%;
   background: #666;
 }
-.video-progress-bar{
+.video-progress-dot-bar{
   width: 14px;
   height: 14px;
   background: white;
@@ -73,6 +73,7 @@
 .video-full i{
   font-size: 20px;
   color: white;
+  cursor: pointer;
 }
 .video-volume{
   float: right;
@@ -97,13 +98,13 @@
   height:100%;
   background: #ff6a03;
 }
-.video-volume-progress-bar{
+.video-volume-progress-dot-bar{
   width: 14px;
   height: 14px;
   background: white;
   border-radius: 50%;
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
   margin-left: -7px;
   margin-top: -4px;

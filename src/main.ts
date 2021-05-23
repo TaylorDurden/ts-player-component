@@ -20,7 +20,8 @@ for(let i = 0; i < listItem.length; i++) {
         console.log('popup-content: ', element);
         video({
           url: url,
-          element: element
+          element: element,
+          autoplay: true,
         });
       }
     });
